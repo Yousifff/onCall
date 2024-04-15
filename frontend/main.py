@@ -2,6 +2,10 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+DEBUG = os.getenv("PRODUCTION", False)
+
+API_URL = "http://localhost:8000" if DEBUG else "https://oncall-api.fly.dev"
+
 
 import streamlit as st
 
