@@ -5,16 +5,17 @@
 
 import streamlit as st
 
-from frontend.admin import create_form
-from frontend.index import create_tabel
+from frontend.pages.admin import create_form
+from frontend.pages.index import create_tabel
 from st_pages import Page,show_pages
 
 if 'database' not in st.session_state:
     st.session_state['database'] = {}
 
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    create_form()
     create_tabel()
 
 
