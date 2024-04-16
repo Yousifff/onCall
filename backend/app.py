@@ -15,11 +15,17 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 
-@app.post("/users")
+@app.post("/admin")
 def create_user(user: User, session: SessionDep):
 
     session.add(user)
     session.commit()
     session.refresh(user)
+    
 
     return user
+
+@app.get("/")
+def get_user(session: SessionDep):
+    users = session.query(User).all()
+    return users
