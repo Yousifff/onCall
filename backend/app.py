@@ -15,7 +15,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 
-@app.post("/admin")
+@app.post("/user")
 def create_user(user: User, session: SessionDep):
 
     session.add(user)
