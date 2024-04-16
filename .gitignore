@@ -1,2 +1,6 @@
 venv
 .idea
+__pycache__/
+pixi
+database.db
+pages/__pycache__
