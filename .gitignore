@@ -2,3 +2,4 @@ venv
 .idea
 __pycache__/
 pixi
+requirements.txt
