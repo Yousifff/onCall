@@ -1,5 +1,5 @@
 from st_pages import Page, Section, show_pages, add_page_title
-from frontend.pages.admin import create_form
+from pages.admin import create_form
 
 import streamlit as st
 
