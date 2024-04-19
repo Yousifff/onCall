@@ -4,3 +4,4 @@ __pycache__/
 pixi
 database.db
 pages/__pycache__
+.vscode/
