@@ -3,12 +3,10 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from models import User, Weekly
 from database import SessionDep, create_db_and_tables
-<<<<<<< HEAD
+
 import uvicorn
-=======
 from datetime import date
 from typing import Optional
->>>>>>> 38472b402da789a7b1086722572511861099c89d
 
 
 @asynccontextmanager

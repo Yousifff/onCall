@@ -41,17 +41,10 @@ def create_form():
 
 
 
-<<<<<<< Updated upstream
 if __name__ == '__main__':
     create_form()
-<<<<<<< HEAD
-    
-=======
 
 if __name__ == '__main__':
     create_form()
     
->>>>>>> Stashed changes
-=======
 
->>>>>>> 38472b402da789a7b1086722572511861099c89d

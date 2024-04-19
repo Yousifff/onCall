@@ -39,7 +39,7 @@
             "python": "${workspaceFolder}/frontend/.pixi/envs/default/bin/python",
             "args": [
                 "run",
-                "${workspaceFolder}/frontend/src/app.py",
+                "${workspaceFolder}/frontend/pages/admin.py",
                 "--server.port",
                 "8501",
             ],
