@@ -3,7 +3,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from models import User
 from database import SessionDep, create_db_and_tables
-
+import uvicorn
 
 
 @asynccontextmanager
@@ -29,3 +29,5 @@ def create_user(user: User, session: SessionDep):
 def get_user(session: SessionDep):
     users = session.query(User).all()
     return users
+
+
