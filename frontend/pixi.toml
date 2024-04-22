@@ -7,8 +7,19 @@ channels = ["conda-forge"]
 platforms = ["linux-64"]
 
 [tasks]
+<<<<<<< Updated upstream
 admin = "pixi run streamlit run pages/admin.py"
+<<<<<<< HEAD
 index = "pixi run streamlit run pages/index.py"
+=======
+main = "pixi run streamlit run app.py"
+index = "pixi run streamlit run pages/index.py"
+admin = "pixi run streamlit run pages/admin.py"
+>>>>>>> Stashed changes
+=======
+main = "pixi run streamlit run app.py"
+
+>>>>>>> 38472b402da789a7b1086722572511861099c89d
 
 [dependencies]
 streamlit = ">=1.33.0,<1.34"
