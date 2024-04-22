@@ -22,8 +22,8 @@ def create_form():
             start = start_date.strftime("%Y-%m-%d")
             end = end_date.strftime("%Y-%m-%d")
 
-            user_data = {'name': name}
-            weekly_data = {'start_date': start, 'end_date': end}
+            user_data = {'name': name,'start_date': start, 'end_date': end}
+            #weekly_data = {'start_date': start, 'end_date': end}
 
             # Send user data
             user_response = requests.post(user_url, json=user_data)
@@ -33,18 +33,16 @@ def create_form():
                 st.error("Failed to save user data.")
 
             # Send weekly data to the corrected endpoint URL
-            weekly_response = requests.post(weekly_url, json=weekly_data)
-            if weekly_response.status_code == 200:
-                st.success("Weekly data saved successfully!")
-            else:
-                st.error("Failed to save weekly data.")
+            #weekly_response = requests.post(weekly_url, json=weekly_data)
+            #if weekly_response.status_code == 200:
+            #    st.success("Weekly data saved successfully!")
+            #else:
+            #    st.error("Failed to save weekly data.")
 
 
 
 if __name__ == '__main__':
     create_form()
 
-if __name__ == '__main__':
-    create_form()
     
 
